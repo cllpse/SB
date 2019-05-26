@@ -11,8 +11,7 @@ import Image from "./components/Image/Image";
 import ImageSection from "./components/ImageSection/ImageSection";
 import InstagramSection from "./components/InstagramSection/InstagramSection";
 
-const App: React.FC = () =>
-{
+const App: React.FC = () => {
     return (
         <div className={styles.app}>
             <Header />

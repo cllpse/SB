@@ -1,4 +1,12 @@
-:root
-{
+:root {
     --u-base: 16px;
+    --u-n1: calc(var(--u-base) * 1);
+    --u-n2: calc(var(--u-base) * 2);
+    --u-n3: calc(var(--u-base) * 3);
+    --u-n4: calc(var(--u-base) * 4);
+    --u-n6: calc(var(--u-base) * 6);
+    --u-n8: calc(var(--u-base) * 8);
+    --u-n10: calc(var(--u-base) * 10);
+    --u-n12: calc(var(--u-base) * 12);
+    --u-n16: calc(var(--u-base) * 16);
 }
