@@ -1,4 +1,21 @@
-.section
-{
+.section {
+    padding: var(--u-n4) var(--u-n1);
     display: flex;
+    justify-content: space-between;
+    height: 40vw;
+    background-color: var(--c-background-light);
+}
+
+.image,
+.text {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.text {
+    display: block;
+}
+
+.spacer {
+    width: 5vw;
 }
