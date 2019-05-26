@@ -18,23 +18,3 @@
     display: flex;
     justify-content: flex-end;
 }
-
-.cart,
-.menu {
-    width: var(--u-n4);
-    height: var(--u-n4);
-    background-image: url("/assets/outline-shopping_cart-24px.svg");
-    background-position: center center;
-    background-size: auto 50%;
-    background-repeat: no-repeat;
-    transition: ease-in-out .1s transform;
-}
-
-.menu {
-    background-image: url("/assets/outline-menu-24px.svg");
-}
-
-.cart:hover,
-.menu:hover {
-    transform: scale(1.25);
-}

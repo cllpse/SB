@@ -6,6 +6,7 @@
     background-color: var(--c-button-primary);
     color: var(--c-button-text);
     outline: none;
+    text-transform: uppercase;
 }
 
 .button[button-type="secondary"] {
@@ -15,6 +16,14 @@
 .button[button-type="icon"] {
     background-color: white;
     border-radius: 100%;
+}
+
+.button[button-type="icon"] img {
+    transition: ease-in-out .1s transform;
+}
+
+.button[button-type="icon"]:hover img {
+    transform: scale(1.2);
 }
 
 .button:hover {
