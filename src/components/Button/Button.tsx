@@ -3,8 +3,8 @@ import React, { Component, ReactChild } from "react";
 import styles from "./styles.module.css";
 
 export enum ButtonType {
-    Primary,
-    Secondary
+    Primary = "primary",
+    Secondary = "secondary"
 }
 
 export interface IProps
@@ -17,16 +17,6 @@ export interface IProps
 
 export default class Button extends Component<IProps, {}>
 {
-    constructor(props: IProps)
-    {
-        super(props);
-
-        if (this.props.icon)
-        {
-
-        }
-    }
-
     render()
     {
         const attributes = {"button-type": this.props.icon ? "icon" : this.props.type && this.props.type.toString().toLowerCase()};

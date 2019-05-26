@@ -1,5 +1,8 @@
 :root {
-    --c-button-primary: #111111;
-    --c-button-secondary: #e4532f;
+    --c-button-primary: #e4532f;
+    --c-button-secondary: #111111;
     --c-button-text: white;
+
+    --c-background-light: #f1f1f1;
+    --c-background-dark: #111111;
 }

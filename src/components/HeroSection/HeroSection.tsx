@@ -38,7 +38,7 @@ export default class HeroSection extends Component<IProps, IState>
                         <div className={styles.content}>
                             <h1 className={styles.header}>{this.props.headerText}</h1>
 
-                            <Button type={ButtonType.Primary} label={this.props.buttonText} onClicked={this.playVideo.bind(this)}  />
+                            <Button type={ButtonType.Secondary} label={this.props.buttonText} onClicked={this.playVideo.bind(this)}  />
                         </div>
                     </div>
                 }
