@@ -6,11 +6,11 @@ export default class Header extends Component {
     render() {
         return (
             <header className={styles.header}>
-                <a href="/" className={styles.logo}></a>
+                <a href="/" title="Navigate to the front page" className={styles.logo}></a>
 
                 <nav className={styles.navigation}>
-                    <a href="/" className={styles.cart}></a>
-                    <a href="/" className={styles.menu}></a>
+                    <a href="/" title="View shopping cart" className={styles.cart}></a>
+                    <a href="/" title="Open navigation menu" className={styles.menu}></a>
                 </nav>
             </header>
         );
