@@ -1,4 +1,22 @@
-.button
-{
+.button {
     display: flex;
+    padding: var(--u-n1);
+    border-radius: var(--br-n5);
+    border: 0;
+    background-color: var(--c-button-primary);
+    color: var(--c-button-text);
+    outline: none;
+}
+
+.button[button-type="secondary"] {
+    background-color: var(--c-button-secondary);
+}
+
+.button[button-type="icon"] {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
 }

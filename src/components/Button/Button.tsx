@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, ReactChild } from "react";
 
 import styles from "./styles.module.css";
 
@@ -7,26 +7,35 @@ export enum ButtonType {
     Secondary
 }
 
-export interface Props
+export interface IProps
 {
-    text: string;
-    type: ButtonType
-    clicked?: any;
+    type?: ButtonType
+    label?: string;
+    icon?: ReactChild;
+    onClicked?: any;
 }
 
-export default class Button extends Component<Props, {}>
+export default class Button extends Component<IProps, {}>
 {
-    /* constructor(props: Props)
+    constructor(props: IProps)
     {
         super(props);
-    } */
+
+        if (this.props.icon)
+        {
+
+        }
+    }
 
     render()
     {
+        const attributes = {"button-type": this.props.icon ? "icon" : this.props.type && this.props.type.toString().toLowerCase()};
+
         return (
-            <div className={styles.button}>
-                BUTTON
-            </div>
+            <button className={styles.button} {...attributes} onClick={this.props.onClicked}>
+                {this.props.icon}
+                {this.props.label}
+            </button>
         );
     }
 }
