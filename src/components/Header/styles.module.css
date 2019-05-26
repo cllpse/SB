@@ -1,4 +1,41 @@
-.header
-{
+.header {
     display: flex;
+    align-content: space-between;
+    height: var(--u-n4);
+    padding-left: var(--u-n1);
+    padding-right: var(--u-n1);
+}
+
+.logo {
+    flex-grow: 1;
+    background-image: url("/img/logo.svg");
+    background-position: left center;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+
+.cart,
+.menu {
+    width: var(--u-n4);
+    height: var(--u-n4);
+    background-image: url("/img/outline-shopping_cart-24px.svg");
+    background-position: center center;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    transition: ease-in-out .1s transform;
+}
+
+.menu {
+    background-image: url("/img/outline-menu-24px.svg");
+}
+
+.cart:hover,
+.menu:hover {
+    transform: scale(1.25);
 }
