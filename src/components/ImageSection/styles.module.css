@@ -1,4 +1,24 @@
-.gallery-section
-{
+.section {
     display: flex;
+    height: 35vw;
+}
+
+.section[image-section-direction="right"] {
+    flex-direction: row-reverse;
+}
+
+.image,
+.body {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.body {
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section[image-section-direction="right"] .body {
+    text-align: right;
 }
