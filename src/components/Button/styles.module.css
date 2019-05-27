@@ -10,6 +10,17 @@
     font: var(--t-button);
 }
 
+.button[button-type="primary"],
+.button[button-type="secondary"] {
+    transition: ease-in-out 0.1s transform;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.button[button-type="primary"]:hover,
+.button[button-type="secondary"]:hover {
+    transform: scale(1.05);
+}
+
 .button[button-type="secondary"] {
     background-color: var(--c-button-secondary);
 }
@@ -20,7 +31,7 @@
 }
 
 .button[button-type="icon"] img {
-    transition: ease-in-out .1s transform;
+    transition: ease-in-out 0.1s transform;
 }
 
 .button[button-type="icon"]:hover img {
