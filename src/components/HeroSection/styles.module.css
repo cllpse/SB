@@ -11,10 +11,6 @@
     z-index: -1;
 }
 
-.content {
-    padding: var(--u-n1);
-}
-
 .header {
     color: white;
 }
@@ -31,6 +27,6 @@
     top: 0;
     right: 0;
     padding: var(--u-n1);
-    padding-left: var(--u-n8);
+    padding-left: var(--u-n5);
     border-bottom-left-radius: var(--br-n5);
 }
