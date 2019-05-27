@@ -1,14 +1,14 @@
 .hero {
-    display: flex;
     position: relative;
+    display: flex;
     overflow: hidden;
     min-height: 40vw;
 }
 
 .backdrop {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
 }
 
@@ -18,8 +18,8 @@
 
 .video {
     position: absolute;
-    width: 100vw;
     z-index: -1;
+    width: 100vw;
 }
 
 .header {
@@ -38,10 +38,10 @@
 
 .close {
     position: absolute;
-    background-color: black;
     top: 0;
     right: 0;
     padding: var(--u-n1);
     padding-left: var(--u-n5);
     border-bottom-left-radius: var(--br-n5);
+    background-color: black;
 }

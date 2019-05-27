@@ -1,5 +1,4 @@
-.footer
-{
+.footer {
     display: flex;
     height: 300px;
     background-color: var(--c-background-dark);

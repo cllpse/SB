@@ -1,19 +1,19 @@
 .button {
+    font: var(--t-button);
     display: flex;
     padding: var(--u-n1);
-    border-radius: var(--br-n5);
-    border: 0;
-    background-color: var(--c-button-primary);
-    color: var(--c-button-text);
-    outline: none;
     text-transform: uppercase;
-    font: var(--t-button);
+    color: var(--c-button-text);
+    border: 0;
+    border-radius: var(--br-n5);
+    outline: none;
+    background-color: var(--c-button-primary);
 }
 
 .button[button-type="primary"],
 .button[button-type="secondary"] {
-    transition: ease-in-out 0.1s transform;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out .1s transform;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 }
 
 .button[button-type="primary"]:hover,
@@ -26,12 +26,12 @@
 }
 
 .button[button-type="icon"] {
-    background-color: white;
     border-radius: 100%;
+    background-color: white;
 }
 
 .button[button-type="icon"] img {
-    transition: ease-in-out 0.1s transform;
+    transition: ease-in-out .1s transform;
 }
 
 .button[button-type="icon"]:hover img {

@@ -1,15 +1,15 @@
 .section {
     display: flex;
     min-height: 35vw;
-    background-color: var(--c-background-light);
     margin: var(--u-n8) var(--u-n2);
+    background-color: var(--c-background-light);
 }
 
 .image,
 .content {
     display: flex;
-    flex-grow: 1;
     flex-basis: 50%;
+    flex-grow: 1;
 }
 
 .content {
