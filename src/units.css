@@ -4,6 +4,7 @@
     --u-n2: calc(var(--u-base) * 2);
     --u-n3: calc(var(--u-base) * 3);
     --u-n4: calc(var(--u-base) * 4);
+    --u-n5: calc(var(--u-base) * 5);
     --u-n6: calc(var(--u-base) * 6);
     --u-n8: calc(var(--u-base) * 8);
     --u-n10: calc(var(--u-base) * 10);
