@@ -21,18 +21,17 @@ export default class CallToActionSection extends Component<IProps, {}>
                     {this.props.image}
                 </div>
 
-                <div className={styles.spacer}></div>
-
-                <div className={styles.text}>
+                <div className={styles.body}>
                     <h2>{this.props.headerText}</h2>
 
                     <p>{this.props.bodyText}</p>
 
                     {this.props.buttonText &&
-                        <Button label={this.props.buttonText} type={ButtonType.Primary} onClicked={this.props.buttonOnClicked} />
+                        <div>
+                            <Button label={this.props.buttonText} type={ButtonType.Primary} onClicked={this.props.buttonOnClicked} />
+                        </div>
                     }
                 </div>
-
             </section>
         );
     }

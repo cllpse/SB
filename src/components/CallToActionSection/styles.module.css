@@ -1,21 +1,16 @@
 .section {
-    padding: var(--u-n4) var(--u-n1);
     display: flex;
-    justify-content: space-between;
-    height: 40vw;
+    height: 35vw;
     background-color: var(--c-background-light);
 }
 
 .image,
-.text {
+.body {
     display: flex;
-    flex-basis: 50%;
+    width: 50%;
+    flex-grow: 1;
 }
 
-.text {
-    display: block;
-}
-
-.spacer {
-    width: 5vw;
+.body {
+    flex-direction: column;
 }
