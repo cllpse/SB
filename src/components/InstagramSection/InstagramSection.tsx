@@ -1,4 +1,4 @@
-import React, { Component, ReactChild } from "react";
+import React, { Component } from "react";
 
 import styles from "./styles.module.css";
 
@@ -9,15 +9,10 @@ export interface Props
 
 export default class InstagramSection extends Component<Props, {}>
 {
-    /* constructor(props: Props)
-    {
-        super(props);
-    } */
-
     render()
     {
         return (
-            <div className={styles.hero}></div>
+            <div className={styles.section}></div>
         );
     }
 }
