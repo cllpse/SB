@@ -30,7 +30,7 @@ export default class HeroSection extends Component<IProps, IState>
             <section className={styles.hero}>
 
                 {!this.state.videoPlaying &&
-                    <>
+                    <div className={styles.backdrop}>
                         <video autoPlay muted loop className={styles.video}>
                             <source src="assets/Desktop_loop_min.mp4" type="video/mp4" />
                         </video>
@@ -38,9 +38,11 @@ export default class HeroSection extends Component<IProps, IState>
                         <div className={styles.content}>
                             <h1 className={styles.header}>{this.props.headerText}</h1>
 
-                            <Button type={ButtonType.Secondary} label={this.props.buttonText} onClicked={this.playVideo.bind(this)}  />
+                            <>
+                                <Button type={ButtonType.Secondary} label={this.props.buttonText} onClicked={this.playVideo.bind(this)}  />
+                            </>
                         </div>
-                    </>
+                    </div>
                 }
 
                 {this.state.videoPlaying &&

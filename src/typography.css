@@ -1,4 +1,20 @@
 :root {
-    --t-header_base: cyan;
-    --t-body_base: cyan;
+    --t-header: 700 38px/48px "GTAmerica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --t-header-margin: 12px;
+
+    --t-body: 500 18px/26px Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --t-body-margin: 6px;
+
+    --t-button: 700 12px/12px "GTAmerica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --t-button-margin: 0;
+}
+
+@font-face {
+    font-family: "GTAmerica";
+    src: url("/assets/GT-America-Expanded-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("/assets/Roboto-Light.woff") format("woff");
 }

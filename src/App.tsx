@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <div className={styles.app}>
             <Header />
 
-            <HeroSection headerText="Seize the season" buttonText="Watch Video" />
+            <HeroSection headerText={`Seize the\nseason`} buttonText="Watch Video" />
 
             <CallToActionSection
                 headerText="We got your backpack"
@@ -46,14 +46,14 @@ const App: React.FC = () => {
 
                 <ImageSection
                     headerText="Snow problem? No problem"
-                    bodyText="Go ahead, throw a snowball at it. Yeah, that didn't even hurt."
+                    bodyText={`Go ahead, throw a snowball at it.\nYeah, that didn't even hurt.`}
                     image={<Image pathLowResolution="assets/Desktop_Durability.jpg" pathHighResolution="assets/Desktop_Durability-2x.jpg" />}
                     direction={ImageSectionDirection.Left}
                 />
 
                 <ImageSection
                     headerText="No mountain high enough"
-                    bodyText="Strap in that BACKPACK and take a hike. Or two. Or three."
+                    bodyText={`Strap in that BACKPACK and take a hike.\nOr two. Or three.`}
                     image={<Image pathLowResolution="assets/Desktop_Portability.jpg" pathHighResolution="assets/Desktop_Portability-2x.jpg" />}
                     direction={ImageSectionDirection.Right}
                 />

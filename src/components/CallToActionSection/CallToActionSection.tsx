@@ -21,13 +21,13 @@ export default class CallToActionSection extends Component<IProps, {}>
                     {this.props.image}
                 </div>
 
-                <div className={styles.body}>
-                    <h2>{this.props.headerText}</h2>
+                <div className={styles.content}>
+                    <h2 className={styles.header}>{this.props.headerText}</h2>
 
-                    <p>{this.props.bodyText}</p>
+                    <p className={styles.body}>{this.props.bodyText}</p>
 
                     {this.props.buttonText &&
-                        <div>
+                        <div className={styles.button}>
                             <Button label={this.props.buttonText} type={ButtonType.Primary} onClicked={this.props.buttonOnClicked} />
                         </div>
                     }

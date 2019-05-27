@@ -5,6 +5,17 @@
     height: 40vw;
 }
 
+.backdrop {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    margin-left: 5vw;
+}
+
 .video {
     position: absolute;
     width: 100vw;
@@ -12,6 +23,10 @@
 }
 
 .header {
+    font: var(--t-header);
+    margin-top: var(--t-header-margin);
+    margin-bottom: var(--t-header-margin);
+    text-transform: uppercase;
     color: white;
 }
 

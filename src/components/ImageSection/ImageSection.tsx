@@ -27,10 +27,10 @@ export default class ImageSection extends Component<Props, {}>
                     {this.props.image}
                 </div>
 
-                <div className={styles.body}>
-                    <h2>{this.props.headerText}</h2>
+                <div className={styles.content}>
+                    <h2 className={styles.header}>{this.props.headerText}</h2>
 
-                    <p>{this.props.bodyText}</p>
+                    <p className={styles.body}>{this.props.bodyText}</p>
                 </div>
             </section>
         );

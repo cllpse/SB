@@ -1,6 +1,6 @@
 .section {
     display: flex;
-    height: 35vw;
+    min-height: 35vw;
 }
 
 .section[image-section-direction="right"] {
@@ -8,17 +8,44 @@
 }
 
 .image,
-.body {
+.content {
     display: flex;
     flex-basis: 50%;
+    margin-top: calc(0px - var(--u-n2));
+}
+
+.image {
+    box-shadow: 0 0 15px 2.5px rgba(0, 0, 0, 0.1);
+}
+
+.section[image-section-direction="left"] .image {
+    margin-left: var(--u-n2);
+}
+
+.section[image-section-direction="right"] .image {
+    margin-right: var(--u-n2);
+}
+
+.content {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: var(--u-n4);
+}
+
+.section[image-section-direction="right"] .content {
+    text-align: right;
+    padding-right: var(--u-n4);
+}
+
+.header {
+    font: var(--t-header);
+    margin-top: var(--t-header-margin);
+    margin-bottom: var(--t-header-margin);
+    text-transform: uppercase;
 }
 
 .body {
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section[image-section-direction="right"] .body {
-    text-align: right;
+    font: var(--t-body);
+    margin-top: var(--t-body-margin);
+    margin-bottom: var(--t-body-margin);
 }

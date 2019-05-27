@@ -1,16 +1,35 @@
 .section {
     display: flex;
-    height: 35vw;
+    min-height: 35vw;
     background-color: var(--c-background-light);
+    margin: var(--u-n8) var(--u-n2);
 }
 
 .image,
-.body {
+.content {
     display: flex;
     width: 50%;
     flex-grow: 1;
 }
 
-.body {
+.content {
     flex-direction: column;
+    padding: var(--u-n3) var(--u-n4);
+}
+
+.header {
+    font: var(--t-header);
+    margin-top: var(--t-header-margin);
+    margin-bottom: var(--t-header-margin);
+    text-transform: uppercase;
+}
+
+.body {
+    font: var(--t-body);
+    margin-top: var(--t-body-margin);
+    margin-bottom: var(--t-body-margin);
+}
+
+.button {
+    margin-top: var(--u-n1);
 }
