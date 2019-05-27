@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Image from "./components/Image/Image";
-import ImageSection from "./components/ImageSection/ImageSection";
+import ImageSection, { ImageSectionDirection } from "./components/ImageSection/ImageSection";
 import InstagramSection from "./components/InstagramSection/InstagramSection";
 
 const App: React.FC = () => {
@@ -29,21 +29,35 @@ const App: React.FC = () => {
                 buttonOnClicked={claimDeal}
             />
 
-            <ImageSection headerText="" bodyText="">
-                <Image pathLowResolution="assets/Desktop_Campaign_Image.jpg" pathHighResolution="assets/Desktop_Campaign_Image-2x.jpg" />
-            </ImageSection>
+            <div className={styles.imageSection}>
+                <ImageSection
+                    headerText="Shake the slopes"
+                    bodyText="Rock the mountain with 122 dB of pure volume."
+                    image={<Image pathLowResolution="assets/Desktop_Volume.jpg" pathHighResolution="assets/Desktop_Volume-2x.jpg" />}
+                    direction={ImageSectionDirection.Left}
+                />
 
-            <ImageSection headerText="" bodyText="">
-                <Image pathLowResolution="assets/Desktop_Campaign_Image.jpg" pathHighResolution="assets/Desktop_Campaign_Image-2x.jpg" />
-            </ImageSection>
+                <ImageSection
+                    headerText="Longer life for longer nights"
+                    bodyText="The nights may be long, but our battery life is 40 hours strong."
+                    image={<Image pathLowResolution="assets/Desktop_Battery.jpg" pathHighResolution="assets/Desktop_Battery-2x.jpg" />}
+                    direction={ImageSectionDirection.Right}
+                />
 
-            <ImageSection headerText="" bodyText="">
-                <Image pathLowResolution="assets/Desktop_Campaign_Image.jpg" pathHighResolution="assets/Desktop_Campaign_Image-2x.jpg" />
-            </ImageSection>
+                <ImageSection
+                    headerText="Snow problem? No problem"
+                    bodyText="Go ahead, throw a snowball at it. Yeah, that didn't even hurt."
+                    image={<Image pathLowResolution="assets/Desktop_Durability.jpg" pathHighResolution="assets/Desktop_Durability-2x.jpg" />}
+                    direction={ImageSectionDirection.Left}
+                />
 
-            <ImageSection headerText="" bodyText="">
-                <Image pathLowResolution="assets/Desktop_Campaign_Image.jpg" pathHighResolution="assets/Desktop_Campaign_Image-2x.jpg" />
-            </ImageSection>
+                <ImageSection
+                    headerText="No mountain high enough"
+                    bodyText="Strap in that BACKPACK and take a hike. Or two. Or three."
+                    image={<Image pathLowResolution="assets/Desktop_Portability.jpg" pathHighResolution="assets/Desktop_Portability-2x.jpg" />}
+                    direction={ImageSectionDirection.Right}
+                />
+            </div>
 
             <CallToActionSection
                 headerText="Free backpack"
@@ -53,7 +67,7 @@ const App: React.FC = () => {
                 buttonOnClicked={claimDeal}
             />
 
-            <InstagramSection headerText="" />
+            <InstagramSection headerText="#seizetheseason" />
 
             <Footer />
         </div>
