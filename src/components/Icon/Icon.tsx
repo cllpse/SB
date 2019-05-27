@@ -1,4 +1,4 @@
-import React, { Component, ReactChild } from "react";
+import React, { Component } from "react";
 
 import styles from "./styles.module.css";
 
@@ -12,7 +12,7 @@ export default class Icon extends Component<IProps, {}>
     render()
     {
         return (
-            <img className={styles.icon} src={this.props.path} />
+            <img className={styles.icon} src={this.props.path} alt="" />
         );
     }
 }
