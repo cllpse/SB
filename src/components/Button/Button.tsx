@@ -22,7 +22,7 @@ export default class Button extends Component<IProps, {}>
         const attributes = {"button-type": this.props.icon ? "icon" : this.props.type && this.props.type.toString()};
 
         return (
-            <button className={styles.button} {...attributes} onClick={this.props.onClicked}>
+            <button className={styles.button} {...attributes} onClick={this.props.onClicked} role="button" aria-label={this.props.label}>
                 {this.props.icon}
                 {this.props.label}
             </button>
