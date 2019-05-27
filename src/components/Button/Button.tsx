@@ -19,7 +19,7 @@ export default class Button extends Component<IProps, {}>
 {
     render()
     {
-        const attributes = {"button-type": this.props.icon ? "icon" : this.props.type && this.props.type.toString().toLowerCase()};
+        const attributes = {"button-type": this.props.icon ? "icon" : this.props.type && this.props.type.toString()};
 
         return (
             <button className={styles.button} {...attributes} onClick={this.props.onClicked}>
