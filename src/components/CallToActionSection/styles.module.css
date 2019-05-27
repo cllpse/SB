@@ -8,8 +8,8 @@
 .image,
 .content {
     display: flex;
-    width: 50%;
     flex-grow: 1;
+    flex-basis: 50%;
 }
 
 .content {

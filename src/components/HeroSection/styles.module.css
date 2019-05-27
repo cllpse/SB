@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    height: 40vw;
+    min-height: 40vw;
 }
 
 .backdrop {
