@@ -11,10 +11,12 @@
 
 @font-face {
     font-family: "GTAmerica";
+    font-display: auto;
     src: url("/assets/GT-America-Expanded-Black.woff") format("woff");
 }
 
 @font-face {
     font-family: Roboto;
+    font-display: auto;
     src: url("/assets/Roboto-Light.woff") format("woff");
 }
